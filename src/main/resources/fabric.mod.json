@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "humble",
+	"version": "${version}",
+	"name": "Humble",
+	"description": "A nice little Fabric Mod by JWX :)",
+	"authors": [
+		"JWX"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/humble/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.humble.Humble"
+		],
+		"client": [
+			"com.humble.HumbleClient"
+		],
+		"fabric-datagen": [
+			"com.humble.HumbleDataGenerator"
+		]
+	},
+	"mixins": [
+		"humble.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
