@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "minecraft:gray_terracotta"
+  },
+  "result": "humble:gray_terracotta_tiles_stairs"
+}
