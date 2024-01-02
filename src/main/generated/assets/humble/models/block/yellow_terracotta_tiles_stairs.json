@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "humble:block/yellow_terracotta_tiles",
+    "side": "humble:block/yellow_terracotta_tiles",
+    "top": "humble:block/yellow_terracotta_tiles"
+  }
+}

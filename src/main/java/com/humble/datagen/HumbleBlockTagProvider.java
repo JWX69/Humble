@@ -1,6 +1,6 @@
 package com.humble.datagen;
 
-import com.humble.block.HumbleBlocks;
+import com.humble.registry.HumbleBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;

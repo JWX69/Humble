@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "humble:block/polished_green_terracotta",
+    "side": "humble:block/polished_green_terracotta",
+    "top": "humble:block/polished_green_terracotta"
+  }
+}

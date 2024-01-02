@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "humble:block/green_terracotta_bricks",
+    "side": "humble:block/green_terracotta_bricks",
+    "top": "humble:block/green_terracotta_bricks"
+  }
+}

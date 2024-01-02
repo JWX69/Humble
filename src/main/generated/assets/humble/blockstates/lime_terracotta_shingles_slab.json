@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "humble:block/lime_terracotta_shingles_slab"
+    },
+    "type=double": {
+      "model": "humble:block/lime_terracotta_shingles"
+    },
+    "type=top": {
+      "model": "humble:block/lime_terracotta_shingles_slab_top"
+    }
+  }
+}

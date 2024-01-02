@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "humble:block/polished_cyan_terracotta",
+    "side": "humble:block/polished_cyan_terracotta",
+    "top": "humble:block/polished_cyan_terracotta"
+  }
+}

@@ -1,7 +1,7 @@
 package com.humble;
 
-import com.humble.block.HumbleBlocks;
-import com.humble.item.HumbleItems;
+import com.humble.registry.HumbleBlocks;
+import com.humble.registry.HumbleItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;

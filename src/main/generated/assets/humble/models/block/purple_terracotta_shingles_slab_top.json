@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "humble:block/purple_terracotta_shingles",
+    "side": "humble:block/purple_terracotta_shingles",
+    "top": "humble:block/purple_terracotta_shingles"
+  }
+}
