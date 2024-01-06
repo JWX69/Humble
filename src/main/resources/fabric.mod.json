@@ -3,7 +3,7 @@
 	"id": "humble",
 	"version": "${version}",
 	"name": "Humble",
-	"description": "A nice little Fabric Mod by JWX :)",
+	"description": "A Mod by JWX That adds nice blocks and stuff :)",
 	"authors": [
 		"JWX"
 	],

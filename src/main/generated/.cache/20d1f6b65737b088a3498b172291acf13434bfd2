@@ -1,9 +1,9 @@
-// 1.20.1	2024-01-02T10:18:02.270591	Humble/Block Loot Tables
-a82853e33bac576f2d0157759275945b3b4c9c96 data\humble\loot_tables\blocks\terracotta_bricks.json
-570247078e058449d852be3a386cf5cecda6cc7b data\humble\loot_tables\blocks\terracotta_bricks_slab.json
-e36987d84ce5515604f1e5edae118626e547337c data\humble\loot_tables\blocks\yellow_terracotta_bricks.json
-9b3731d2d5418430b42aa443b7af57d4134026dd data\humble\loot_tables\blocks\cobbled_path.json
+// 1.20.1	2024-01-06T13:02:37.2137784	Humble/Block Loot Tables
 fc1bda77f5c3c258a4ef46eaf396c434731c04cf data\humble\loot_tables\blocks\lime_terracotta_bricks.json
 27679a45145c37b0418ac772087ddd450178af55 data\humble\loot_tables\blocks\orange_terracotta_bricks.json
+a82853e33bac576f2d0157759275945b3b4c9c96 data\humble\loot_tables\blocks\terracotta_bricks.json
+e36987d84ce5515604f1e5edae118626e547337c data\humble\loot_tables\blocks\yellow_terracotta_bricks.json
+570247078e058449d852be3a386cf5cecda6cc7b data\humble\loot_tables\blocks\terracotta_bricks_slab.json
 8b7b4fc1d71bc1b2071a139990c74fa727386570 data\humble\loot_tables\blocks\green_terracotta_bricks.json
+9b3731d2d5418430b42aa443b7af57d4134026dd data\humble\loot_tables\blocks\cobbled_path.json
 5cd409c10686e3a986d4d2456c9da27f5c71e836 data\humble\loot_tables\blocks\red_terracotta_bricks.json
