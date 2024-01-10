@@ -1,31 +1,36 @@
 package com.humble.block;
 
-import net.minecraft.block.*;
-import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.shape.VoxelShape;
-import net.minecraft.util.shape.VoxelShapes;
-import net.minecraft.world.BlockView;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.BaseEntityBlock;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.EntityBlock;
+import net.minecraft.world.level.block.RenderShape;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
-public class PotteryTableBlock extends BlockWithEntity implements BlockEntityProvider {
-    private static final VoxelShape TOP = Block.createCuboidShape(0,11,0,16,16,16);
-    private static final VoxelShape LEGS = Block.createCuboidShape(1,0,1,15,11,15);
-    private static final VoxelShape SHAPE = VoxelShapes.union(TOP, LEGS);
-    public PotteryTableBlock(Settings settings) {
+public class PotteryTableBlock extends BaseEntityBlock implements EntityBlock {
+    private static final VoxelShape TOP = Block.box(0,11,0,16,16,16);
+    private static final VoxelShape LEGS = Block.box(1,0,1,15,11,15);
+    private static final VoxelShape SHAPE = Shapes.or(TOP, LEGS);
+    public PotteryTableBlock(Properties settings) {
         super(settings);
     }
     @Override
-    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+    public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
         return SHAPE;
     }
     @Override
-    public BlockRenderType getRenderType(BlockState state) {
-        return BlockRenderType.MODEL;
+    public RenderShape getRenderShape(BlockState state) {
+        return RenderShape.MODEL;
     }
     @Nullable
     @Override
-    public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
+    public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
         return null;
     }
 }

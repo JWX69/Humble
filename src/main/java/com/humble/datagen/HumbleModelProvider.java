@@ -4,91 +4,91 @@ import com.humble.registry.HumbleBlocks;
 import com.humble.registry.HumbleItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
+import net.minecraft.data.models.BlockModelGenerators;
+import net.minecraft.data.models.ItemModelGenerators;
+import net.minecraft.data.models.model.ModelTemplates;
 
 public class HumbleModelProvider extends FabricModelProvider {
     public HumbleModelProvider(FabricDataOutput output) {
         super(output);
     }
     @Override
-    public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+    public void generateBlockStateModels(BlockModelGenerators blockStateModelGenerator) {
         //Terracotta Bricks
-        BlockStateModelGenerator.BlockTexturePool terracottaBricks = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.TERRACOTTA_BRICKS);
-        BlockStateModelGenerator.BlockTexturePool redTerracottaBricks = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.RED_TERRACOTTA_BRICKS);
-        BlockStateModelGenerator.BlockTexturePool orangeTerracottaBricks = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.ORANGE_TERRACOTTA_BRICKS);
-        BlockStateModelGenerator.BlockTexturePool yellowTerracottaBricks = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.YELLOW_TERRACOTTA_BRICKS);
-        BlockStateModelGenerator.BlockTexturePool limeTerracottaBricks = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.LIME_TERRACOTTA_BRICKS);
-        BlockStateModelGenerator.BlockTexturePool greenTerracottaBricks = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.GREEN_TERRACOTTA_BRICKS);
-        BlockStateModelGenerator.BlockTexturePool blueTerracottaBricks = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.BLUE_TERRACOTTA_BRICKS);
-        BlockStateModelGenerator.BlockTexturePool cyanTerracottaBricks = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.CYAN_TERRACOTTA_BRICKS);
-        BlockStateModelGenerator.BlockTexturePool lightBlueTerracottaBricks = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.LIGHT_BLUE_TERRACOTTA_BRICKS);
-        BlockStateModelGenerator.BlockTexturePool magentaTerracottaBricks = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.MAGENTA_TERRACOTTA_BRICKS);
-        BlockStateModelGenerator.BlockTexturePool purpleTerracottaBricks = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.PURPLE_TERRACOTTA_BRICKS);
-        BlockStateModelGenerator.BlockTexturePool pinkTerracottaBricks = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.PINK_TERRACOTTA_BRICKS);
-        BlockStateModelGenerator.BlockTexturePool blackTerracottaBricks = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.BLACK_TERRACOTTA_BRICKS);
-        BlockStateModelGenerator.BlockTexturePool grayTerracottaBricks = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.GRAY_TERRACOTTA_BRICKS);
-        BlockStateModelGenerator.BlockTexturePool brownTerracottaBricks = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.BROWN_TERRACOTTA_BRICKS);
-        BlockStateModelGenerator.BlockTexturePool lightGrayTerracottaBricks = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.LIGHT_GRAY_TERRACOTTA_BRICKS);
-        BlockStateModelGenerator.BlockTexturePool whiteTerracottaBricks = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.WHITE_TERRACOTTA_BRICKS);
+        BlockModelGenerators.BlockFamilyProvider terracottaBricks = blockStateModelGenerator.family(HumbleBlocks.TERRACOTTA_BRICKS);
+        BlockModelGenerators.BlockFamilyProvider redTerracottaBricks = blockStateModelGenerator.family(HumbleBlocks.RED_TERRACOTTA_BRICKS);
+        BlockModelGenerators.BlockFamilyProvider orangeTerracottaBricks = blockStateModelGenerator.family(HumbleBlocks.ORANGE_TERRACOTTA_BRICKS);
+        BlockModelGenerators.BlockFamilyProvider yellowTerracottaBricks = blockStateModelGenerator.family(HumbleBlocks.YELLOW_TERRACOTTA_BRICKS);
+        BlockModelGenerators.BlockFamilyProvider limeTerracottaBricks = blockStateModelGenerator.family(HumbleBlocks.LIME_TERRACOTTA_BRICKS);
+        BlockModelGenerators.BlockFamilyProvider greenTerracottaBricks = blockStateModelGenerator.family(HumbleBlocks.GREEN_TERRACOTTA_BRICKS);
+        BlockModelGenerators.BlockFamilyProvider blueTerracottaBricks = blockStateModelGenerator.family(HumbleBlocks.BLUE_TERRACOTTA_BRICKS);
+        BlockModelGenerators.BlockFamilyProvider cyanTerracottaBricks = blockStateModelGenerator.family(HumbleBlocks.CYAN_TERRACOTTA_BRICKS);
+        BlockModelGenerators.BlockFamilyProvider lightBlueTerracottaBricks = blockStateModelGenerator.family(HumbleBlocks.LIGHT_BLUE_TERRACOTTA_BRICKS);
+        BlockModelGenerators.BlockFamilyProvider magentaTerracottaBricks = blockStateModelGenerator.family(HumbleBlocks.MAGENTA_TERRACOTTA_BRICKS);
+        BlockModelGenerators.BlockFamilyProvider purpleTerracottaBricks = blockStateModelGenerator.family(HumbleBlocks.PURPLE_TERRACOTTA_BRICKS);
+        BlockModelGenerators.BlockFamilyProvider pinkTerracottaBricks = blockStateModelGenerator.family(HumbleBlocks.PINK_TERRACOTTA_BRICKS);
+        BlockModelGenerators.BlockFamilyProvider blackTerracottaBricks = blockStateModelGenerator.family(HumbleBlocks.BLACK_TERRACOTTA_BRICKS);
+        BlockModelGenerators.BlockFamilyProvider grayTerracottaBricks = blockStateModelGenerator.family(HumbleBlocks.GRAY_TERRACOTTA_BRICKS);
+        BlockModelGenerators.BlockFamilyProvider brownTerracottaBricks = blockStateModelGenerator.family(HumbleBlocks.BROWN_TERRACOTTA_BRICKS);
+        BlockModelGenerators.BlockFamilyProvider lightGrayTerracottaBricks = blockStateModelGenerator.family(HumbleBlocks.LIGHT_GRAY_TERRACOTTA_BRICKS);
+        BlockModelGenerators.BlockFamilyProvider whiteTerracottaBricks = blockStateModelGenerator.family(HumbleBlocks.WHITE_TERRACOTTA_BRICKS);
 
         //Polished Terracotta
-        BlockStateModelGenerator.BlockTexturePool polishedTerracotta = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.POLISHED_TERRACOTTA);
-        BlockStateModelGenerator.BlockTexturePool polishedRedTerracotta = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.POLISHED_RED_TERRACOTTA);
-        BlockStateModelGenerator.BlockTexturePool polishedOrangeTerracotta = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.POLISHED_ORANGE_TERRACOTTA);
-        BlockStateModelGenerator.BlockTexturePool polishedYellowTerracotta = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.POLISHED_YELLOW_TERRACOTTA);
-        BlockStateModelGenerator.BlockTexturePool polishedLimeTerracotta = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.POLISHED_LIME_TERRACOTTA);
-        BlockStateModelGenerator.BlockTexturePool polishedGreenTerracotta = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.POLISHED_GREEN_TERRACOTTA);
-        BlockStateModelGenerator.BlockTexturePool polishedBlueTerracotta = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.POLISHED_BLUE_TERRACOTTA);
-        BlockStateModelGenerator.BlockTexturePool polishedCyanTerracotta = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.POLISHED_CYAN_TERRACOTTA);
-        BlockStateModelGenerator.BlockTexturePool polishedLightBlueTerracotta = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.POLISHED_LIGHT_BLUE_TERRACOTTA);
-        BlockStateModelGenerator.BlockTexturePool polishedMagentaTerracotta = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.POLISHED_MAGENTA_TERRACOTTA);
-        BlockStateModelGenerator.BlockTexturePool polishedPurpleTerracotta = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.POLISHED_PURPLE_TERRACOTTA);
-        BlockStateModelGenerator.BlockTexturePool polishedPinkTerracotta = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.POLISHED_PINK_TERRACOTTA);
-        BlockStateModelGenerator.BlockTexturePool polishedBlackTerracotta = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.POLISHED_BLACK_TERRACOTTA);
-        BlockStateModelGenerator.BlockTexturePool polishedBrownTerracotta = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.POLISHED_BROWN_TERRACOTTA);
-        BlockStateModelGenerator.BlockTexturePool polishedGrayTerracotta = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.POLISHED_GRAY_TERRACOTTA);
-        BlockStateModelGenerator.BlockTexturePool polishedLightGrayTerracotta = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.POLISHED_LIGHT_GRAY_TERRACOTTA);
-        BlockStateModelGenerator.BlockTexturePool polishedWhiteTerracotta = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.POLISHED_WHITE_TERRACOTTA);
+        BlockModelGenerators.BlockFamilyProvider polishedTerracotta = blockStateModelGenerator.family(HumbleBlocks.POLISHED_TERRACOTTA);
+        BlockModelGenerators.BlockFamilyProvider polishedRedTerracotta = blockStateModelGenerator.family(HumbleBlocks.POLISHED_RED_TERRACOTTA);
+        BlockModelGenerators.BlockFamilyProvider polishedOrangeTerracotta = blockStateModelGenerator.family(HumbleBlocks.POLISHED_ORANGE_TERRACOTTA);
+        BlockModelGenerators.BlockFamilyProvider polishedYellowTerracotta = blockStateModelGenerator.family(HumbleBlocks.POLISHED_YELLOW_TERRACOTTA);
+        BlockModelGenerators.BlockFamilyProvider polishedLimeTerracotta = blockStateModelGenerator.family(HumbleBlocks.POLISHED_LIME_TERRACOTTA);
+        BlockModelGenerators.BlockFamilyProvider polishedGreenTerracotta = blockStateModelGenerator.family(HumbleBlocks.POLISHED_GREEN_TERRACOTTA);
+        BlockModelGenerators.BlockFamilyProvider polishedBlueTerracotta = blockStateModelGenerator.family(HumbleBlocks.POLISHED_BLUE_TERRACOTTA);
+        BlockModelGenerators.BlockFamilyProvider polishedCyanTerracotta = blockStateModelGenerator.family(HumbleBlocks.POLISHED_CYAN_TERRACOTTA);
+        BlockModelGenerators.BlockFamilyProvider polishedLightBlueTerracotta = blockStateModelGenerator.family(HumbleBlocks.POLISHED_LIGHT_BLUE_TERRACOTTA);
+        BlockModelGenerators.BlockFamilyProvider polishedMagentaTerracotta = blockStateModelGenerator.family(HumbleBlocks.POLISHED_MAGENTA_TERRACOTTA);
+        BlockModelGenerators.BlockFamilyProvider polishedPurpleTerracotta = blockStateModelGenerator.family(HumbleBlocks.POLISHED_PURPLE_TERRACOTTA);
+        BlockModelGenerators.BlockFamilyProvider polishedPinkTerracotta = blockStateModelGenerator.family(HumbleBlocks.POLISHED_PINK_TERRACOTTA);
+        BlockModelGenerators.BlockFamilyProvider polishedBlackTerracotta = blockStateModelGenerator.family(HumbleBlocks.POLISHED_BLACK_TERRACOTTA);
+        BlockModelGenerators.BlockFamilyProvider polishedBrownTerracotta = blockStateModelGenerator.family(HumbleBlocks.POLISHED_BROWN_TERRACOTTA);
+        BlockModelGenerators.BlockFamilyProvider polishedGrayTerracotta = blockStateModelGenerator.family(HumbleBlocks.POLISHED_GRAY_TERRACOTTA);
+        BlockModelGenerators.BlockFamilyProvider polishedLightGrayTerracotta = blockStateModelGenerator.family(HumbleBlocks.POLISHED_LIGHT_GRAY_TERRACOTTA);
+        BlockModelGenerators.BlockFamilyProvider polishedWhiteTerracotta = blockStateModelGenerator.family(HumbleBlocks.POLISHED_WHITE_TERRACOTTA);
 
         //Terracotta Tiles
-        BlockStateModelGenerator.BlockTexturePool terracottaTiles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.TERRACOTTA_TILES);
-        BlockStateModelGenerator.BlockTexturePool redTerracottaTiles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.RED_TERRACOTTA_TILES);
-        BlockStateModelGenerator.BlockTexturePool orangeTerracottaTiles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.ORANGE_TERRACOTTA_TILES);
-        BlockStateModelGenerator.BlockTexturePool yellowTerracottaTiles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.YELLOW_TERRACOTTA_TILES);
-        BlockStateModelGenerator.BlockTexturePool limeTerracottaTiles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.LIME_TERRACOTTA_TILES);
-        BlockStateModelGenerator.BlockTexturePool greenTerracottaTiles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.GREEN_TERRACOTTA_TILES);
-        BlockStateModelGenerator.BlockTexturePool blueTerracottaTiles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.BLUE_TERRACOTTA_TILES);
-        BlockStateModelGenerator.BlockTexturePool cyanTerracottaTiles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.CYAN_TERRACOTTA_TILES);
-        BlockStateModelGenerator.BlockTexturePool lightBlueTerracottaTiles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.LIGHT_BLUE_TERRACOTTA_TILES);
-        BlockStateModelGenerator.BlockTexturePool magentaTerracottaTiles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.MAGENTA_TERRACOTTA_TILES);
-        BlockStateModelGenerator.BlockTexturePool purpleTerracottaTiles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.PURPLE_TERRACOTTA_TILES);
-        BlockStateModelGenerator.BlockTexturePool pinkTerracottaTiles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.PINK_TERRACOTTA_TILES);
-        BlockStateModelGenerator.BlockTexturePool blackTerracottaTiles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.BLACK_TERRACOTTA_TILES);
-        BlockStateModelGenerator.BlockTexturePool brownTerracottaTiles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.BROWN_TERRACOTTA_TILES);
-        BlockStateModelGenerator.BlockTexturePool grayTerracottaTiles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.GRAY_TERRACOTTA_TILES);
-        BlockStateModelGenerator.BlockTexturePool lightGrayTerracottaTiles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.LIGHT_GRAY_TERRACOTTA_TILES);
-        BlockStateModelGenerator.BlockTexturePool whiteTerracottaTiles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.WHITE_TERRACOTTA_TILES);
+        BlockModelGenerators.BlockFamilyProvider terracottaTiles = blockStateModelGenerator.family(HumbleBlocks.TERRACOTTA_TILES);
+        BlockModelGenerators.BlockFamilyProvider redTerracottaTiles = blockStateModelGenerator.family(HumbleBlocks.RED_TERRACOTTA_TILES);
+        BlockModelGenerators.BlockFamilyProvider orangeTerracottaTiles = blockStateModelGenerator.family(HumbleBlocks.ORANGE_TERRACOTTA_TILES);
+        BlockModelGenerators.BlockFamilyProvider yellowTerracottaTiles = blockStateModelGenerator.family(HumbleBlocks.YELLOW_TERRACOTTA_TILES);
+        BlockModelGenerators.BlockFamilyProvider limeTerracottaTiles = blockStateModelGenerator.family(HumbleBlocks.LIME_TERRACOTTA_TILES);
+        BlockModelGenerators.BlockFamilyProvider greenTerracottaTiles = blockStateModelGenerator.family(HumbleBlocks.GREEN_TERRACOTTA_TILES);
+        BlockModelGenerators.BlockFamilyProvider blueTerracottaTiles = blockStateModelGenerator.family(HumbleBlocks.BLUE_TERRACOTTA_TILES);
+        BlockModelGenerators.BlockFamilyProvider cyanTerracottaTiles = blockStateModelGenerator.family(HumbleBlocks.CYAN_TERRACOTTA_TILES);
+        BlockModelGenerators.BlockFamilyProvider lightBlueTerracottaTiles = blockStateModelGenerator.family(HumbleBlocks.LIGHT_BLUE_TERRACOTTA_TILES);
+        BlockModelGenerators.BlockFamilyProvider magentaTerracottaTiles = blockStateModelGenerator.family(HumbleBlocks.MAGENTA_TERRACOTTA_TILES);
+        BlockModelGenerators.BlockFamilyProvider purpleTerracottaTiles = blockStateModelGenerator.family(HumbleBlocks.PURPLE_TERRACOTTA_TILES);
+        BlockModelGenerators.BlockFamilyProvider pinkTerracottaTiles = blockStateModelGenerator.family(HumbleBlocks.PINK_TERRACOTTA_TILES);
+        BlockModelGenerators.BlockFamilyProvider blackTerracottaTiles = blockStateModelGenerator.family(HumbleBlocks.BLACK_TERRACOTTA_TILES);
+        BlockModelGenerators.BlockFamilyProvider brownTerracottaTiles = blockStateModelGenerator.family(HumbleBlocks.BROWN_TERRACOTTA_TILES);
+        BlockModelGenerators.BlockFamilyProvider grayTerracottaTiles = blockStateModelGenerator.family(HumbleBlocks.GRAY_TERRACOTTA_TILES);
+        BlockModelGenerators.BlockFamilyProvider lightGrayTerracottaTiles = blockStateModelGenerator.family(HumbleBlocks.LIGHT_GRAY_TERRACOTTA_TILES);
+        BlockModelGenerators.BlockFamilyProvider whiteTerracottaTiles = blockStateModelGenerator.family(HumbleBlocks.WHITE_TERRACOTTA_TILES);
 
         //Terracotta Shingles
-        BlockStateModelGenerator.BlockTexturePool terracottaShingles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.TERRACOTTA_SHINGLES);
-        BlockStateModelGenerator.BlockTexturePool redTerracottaShingles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.RED_TERRACOTTA_SHINGLES);
-        BlockStateModelGenerator.BlockTexturePool orangeTerracottaShingles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.ORANGE_TERRACOTTA_SHINGLES);
-        BlockStateModelGenerator.BlockTexturePool yellowTerracottaShingles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.YELLOW_TERRACOTTA_SHINGLES);
-        BlockStateModelGenerator.BlockTexturePool limeTerracottaShingles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.LIME_TERRACOTTA_SHINGLES);
-        BlockStateModelGenerator.BlockTexturePool greenTerracottaShingles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.GREEN_TERRACOTTA_SHINGLES);
-        BlockStateModelGenerator.BlockTexturePool blueTerracottaShingles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.BLUE_TERRACOTTA_SHINGLES);
-        BlockStateModelGenerator.BlockTexturePool cyanTerracottaShingles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.CYAN_TERRACOTTA_SHINGLES);
-        BlockStateModelGenerator.BlockTexturePool lightBlueTerracottaShingles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.LIGHT_BLUE_TERRACOTTA_SHINGLES);
-        BlockStateModelGenerator.BlockTexturePool magentaTerracottaShingles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.MAGENTA_TERRACOTTA_SHINGLES);
-        BlockStateModelGenerator.BlockTexturePool purpleTerracottaShingles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.PURPLE_TERRACOTTA_SHINGLES);
-        BlockStateModelGenerator.BlockTexturePool pinkTerracottaShingles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.PINK_TERRACOTTA_SHINGLES);
-        BlockStateModelGenerator.BlockTexturePool blackTerracottaShingles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.BLACK_TERRACOTTA_SHINGLES);
-        BlockStateModelGenerator.BlockTexturePool brownTerracottaShingles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.BROWN_TERRACOTTA_SHINGLES);
-        BlockStateModelGenerator.BlockTexturePool grayTerracottaShingles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.GRAY_TERRACOTTA_SHINGLES);
-        BlockStateModelGenerator.BlockTexturePool lightGrayTerracottaShingles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.LIGHT_GRAY_TERRACOTTA_SHINGLES);
-        BlockStateModelGenerator.BlockTexturePool whiteTerracottaShingles = blockStateModelGenerator.registerCubeAllModelTexturePool(HumbleBlocks.WHITE_TERRACOTTA_SHINGLES);
+        BlockModelGenerators.BlockFamilyProvider terracottaShingles = blockStateModelGenerator.family(HumbleBlocks.TERRACOTTA_SHINGLES);
+        BlockModelGenerators.BlockFamilyProvider redTerracottaShingles = blockStateModelGenerator.family(HumbleBlocks.RED_TERRACOTTA_SHINGLES);
+        BlockModelGenerators.BlockFamilyProvider orangeTerracottaShingles = blockStateModelGenerator.family(HumbleBlocks.ORANGE_TERRACOTTA_SHINGLES);
+        BlockModelGenerators.BlockFamilyProvider yellowTerracottaShingles = blockStateModelGenerator.family(HumbleBlocks.YELLOW_TERRACOTTA_SHINGLES);
+        BlockModelGenerators.BlockFamilyProvider limeTerracottaShingles = blockStateModelGenerator.family(HumbleBlocks.LIME_TERRACOTTA_SHINGLES);
+        BlockModelGenerators.BlockFamilyProvider greenTerracottaShingles = blockStateModelGenerator.family(HumbleBlocks.GREEN_TERRACOTTA_SHINGLES);
+        BlockModelGenerators.BlockFamilyProvider blueTerracottaShingles = blockStateModelGenerator.family(HumbleBlocks.BLUE_TERRACOTTA_SHINGLES);
+        BlockModelGenerators.BlockFamilyProvider cyanTerracottaShingles = blockStateModelGenerator.family(HumbleBlocks.CYAN_TERRACOTTA_SHINGLES);
+        BlockModelGenerators.BlockFamilyProvider lightBlueTerracottaShingles = blockStateModelGenerator.family(HumbleBlocks.LIGHT_BLUE_TERRACOTTA_SHINGLES);
+        BlockModelGenerators.BlockFamilyProvider magentaTerracottaShingles = blockStateModelGenerator.family(HumbleBlocks.MAGENTA_TERRACOTTA_SHINGLES);
+        BlockModelGenerators.BlockFamilyProvider purpleTerracottaShingles = blockStateModelGenerator.family(HumbleBlocks.PURPLE_TERRACOTTA_SHINGLES);
+        BlockModelGenerators.BlockFamilyProvider pinkTerracottaShingles = blockStateModelGenerator.family(HumbleBlocks.PINK_TERRACOTTA_SHINGLES);
+        BlockModelGenerators.BlockFamilyProvider blackTerracottaShingles = blockStateModelGenerator.family(HumbleBlocks.BLACK_TERRACOTTA_SHINGLES);
+        BlockModelGenerators.BlockFamilyProvider brownTerracottaShingles = blockStateModelGenerator.family(HumbleBlocks.BROWN_TERRACOTTA_SHINGLES);
+        BlockModelGenerators.BlockFamilyProvider grayTerracottaShingles = blockStateModelGenerator.family(HumbleBlocks.GRAY_TERRACOTTA_SHINGLES);
+        BlockModelGenerators.BlockFamilyProvider lightGrayTerracottaShingles = blockStateModelGenerator.family(HumbleBlocks.LIGHT_GRAY_TERRACOTTA_SHINGLES);
+        BlockModelGenerators.BlockFamilyProvider whiteTerracottaShingles = blockStateModelGenerator.family(HumbleBlocks.WHITE_TERRACOTTA_SHINGLES);
 
         //Slabs
         terracottaBricks.slab(HumbleBlocks.TERRACOTTA_BRICKS_SLAB);
@@ -239,7 +239,7 @@ public class HumbleModelProvider extends FabricModelProvider {
     }
 
     @Override
-    public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(HumbleItems.ROCK, Models.GENERATED);
+    public void generateItemModels(ItemModelGenerators itemModelGenerator) {
+        itemModelGenerator.generateFlatItem(HumbleItems.ROCK, ModelTemplates.FLAT_ITEM);
     }
 }
