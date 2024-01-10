@@ -5,12 +5,12 @@ import com.humble.block.PotBlock;
 import com.humble.block.PotteryTableBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.*;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.util.Identifier;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.*;
 
 public class HumbleBlocks {
 
@@ -19,9 +19,9 @@ public class HumbleBlocks {
     public static final Block COBBLED_PATH = registerBlock("cobbled_path",
             new DirtPathBlock(FabricBlockSettings.copyOf(Blocks.DIRT_PATH)));
     public static final Block POTTERY_TABLE = registerBlock("pottery_table",
-            new PotteryTableBlock(FabricBlockSettings.copyOf(Blocks.TERRACOTTA).nonOpaque()));
+            new PotteryTableBlock(FabricBlockSettings.copyOf(Blocks.TERRACOTTA).noOcclusion()));
     public static final Block TERRACOTTA_POT = registerBlock("terracotta_pot",
-            new PotBlock(FabricBlockSettings.copyOf(Blocks.TERRACOTTA).nonOpaque()));
+            new PotBlock(FabricBlockSettings.copyOf(Blocks.TERRACOTTA).noOcclusion()));
 
     // Terracotta Bricks
 
@@ -62,39 +62,39 @@ public class HumbleBlocks {
 
     //Terracotta Brick Stairs
     public static final Block TERRACOTTA_BRICKS_STAIRS = registerBlock("terracotta_bricks_stairs",
-            new StairsBlock(HumbleBlocks.TERRACOTTA_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(Blocks.TERRACOTTA)));
+            new StairBlock(HumbleBlocks.TERRACOTTA_BRICKS.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.TERRACOTTA)));
     public static final Block RED_TERRACOTTA_BRICKS_STAIRS = registerBlock("red_terracotta_bricks_stairs",
-            new StairsBlock(HumbleBlocks.RED_TERRACOTTA_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(Blocks.RED_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.RED_TERRACOTTA_BRICKS.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.RED_TERRACOTTA)));
     public static final Block ORANGE_TERRACOTTA_BRICKS_STAIRS = registerBlock("orange_terracotta_bricks_stairs",
-            new StairsBlock(HumbleBlocks.ORANGE_TERRACOTTA_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(Blocks.ORANGE_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.ORANGE_TERRACOTTA_BRICKS.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.ORANGE_TERRACOTTA)));
     public static final Block YELLOW_TERRACOTTA_BRICKS_STAIRS = registerBlock("yellow_terracotta_bricks_stairs",
-            new StairsBlock(HumbleBlocks.YELLOW_TERRACOTTA_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(Blocks.YELLOW_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.YELLOW_TERRACOTTA_BRICKS.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.YELLOW_TERRACOTTA)));
     public static final Block LIME_TERRACOTTA_BRICKS_STAIRS = registerBlock("lime_terracotta_bricks_stairs",
-            new StairsBlock(HumbleBlocks.LIME_TERRACOTTA_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(Blocks.LIME_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.LIME_TERRACOTTA_BRICKS.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.LIME_TERRACOTTA)));
     public static final Block GREEN_TERRACOTTA_BRICKS_STAIRS = registerBlock("green_terracotta_bricks_stairs",
-            new StairsBlock(HumbleBlocks.GREEN_TERRACOTTA_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(Blocks.GREEN_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.GREEN_TERRACOTTA_BRICKS.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.GREEN_TERRACOTTA)));
     public static final Block BLUE_TERRACOTTA_BRICKS_STAIRS = registerBlock("blue_terracotta_bricks_stairs",
-            new StairsBlock(HumbleBlocks.BLUE_TERRACOTTA_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(Blocks.BLUE_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.BLUE_TERRACOTTA_BRICKS.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.BLUE_TERRACOTTA)));
     public static final Block CYAN_TERRACOTTA_BRICKS_STAIRS = registerBlock("cyan_terracotta_bricks_stairs",
-            new StairsBlock(HumbleBlocks.CYAN_TERRACOTTA_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(Blocks.CYAN_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.CYAN_TERRACOTTA_BRICKS.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.CYAN_TERRACOTTA)));
     public static final Block LIGHT_BLUE_TERRACOTTA_BRICKS_STAIRS = registerBlock("light_blue_terracotta_bricks_stairs",
-            new StairsBlock(HumbleBlocks.LIGHT_BLUE_TERRACOTTA_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(Blocks.LIGHT_BLUE_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.LIGHT_BLUE_TERRACOTTA_BRICKS.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.LIGHT_BLUE_TERRACOTTA)));
     public static final Block MAGENTA_TERRACOTTA_BRICKS_STAIRS = registerBlock("magenta_terracotta_bricks_stairs",
-            new StairsBlock(HumbleBlocks.MAGENTA_TERRACOTTA_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(Blocks.MAGENTA_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.MAGENTA_TERRACOTTA_BRICKS.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.MAGENTA_TERRACOTTA)));
     public static final Block PURPLE_TERRACOTTA_BRICKS_STAIRS = registerBlock("purple_terracotta_bricks_stairs",
-            new StairsBlock(HumbleBlocks.PURPLE_TERRACOTTA_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(Blocks.PURPLE_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.PURPLE_TERRACOTTA_BRICKS.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.PURPLE_TERRACOTTA)));
     public static final Block PINK_TERRACOTTA_BRICKS_STAIRS = registerBlock("pink_terracotta_bricks_stairs",
-            new StairsBlock(HumbleBlocks.PINK_TERRACOTTA_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(Blocks.PINK_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.PINK_TERRACOTTA_BRICKS.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.PINK_TERRACOTTA)));
     public static final Block BLACK_TERRACOTTA_BRICKS_STAIRS = registerBlock("black_terracotta_bricks_stairs",
-            new StairsBlock(HumbleBlocks.BLACK_TERRACOTTA_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(Blocks.BLACK_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.BLACK_TERRACOTTA_BRICKS.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.BLACK_TERRACOTTA)));
     public static final Block GRAY_TERRACOTTA_BRICKS_STAIRS = registerBlock("gray_terracotta_bricks_stairs",
-            new StairsBlock(HumbleBlocks.GRAY_TERRACOTTA_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(Blocks.GRAY_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.GRAY_TERRACOTTA_BRICKS.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.GRAY_TERRACOTTA)));
     public static final Block BROWN_TERRACOTTA_BRICKS_STAIRS = registerBlock("brown_terracotta_bricks_stairs",
-            new StairsBlock(HumbleBlocks.BROWN_TERRACOTTA_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(Blocks.BROWN_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.BROWN_TERRACOTTA_BRICKS.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.BROWN_TERRACOTTA)));
     public static final Block LIGHT_GRAY_TERRACOTTA_BRICKS_STAIRS = registerBlock("light_gray_terracotta_bricks_stairs",
-            new StairsBlock(HumbleBlocks.LIGHT_GRAY_TERRACOTTA_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(Blocks.LIGHT_GRAY_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.LIGHT_GRAY_TERRACOTTA_BRICKS.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.LIGHT_GRAY_TERRACOTTA)));
     public static final Block WHITE_TERRACOTTA_BRICKS_STAIRS = registerBlock("white_terracotta_bricks_stairs",
-            new StairsBlock(HumbleBlocks.WHITE_TERRACOTTA_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(Blocks.WHITE_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.WHITE_TERRACOTTA_BRICKS.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.WHITE_TERRACOTTA)));
 
     //Terracotta Brick Slab
     public static final Block TERRACOTTA_BRICKS_SLAB = registerBlock("terracotta_bricks_slab",
@@ -170,39 +170,39 @@ public class HumbleBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.WHITE_TERRACOTTA)));
     //Polished Terracotta Stairs
     public static final Block POLISHED_TERRACOTTA_STAIRS = registerBlock("polished_terracotta_stairs",
-            new StairsBlock(HumbleBlocks.POLISHED_TERRACOTTA.getDefaultState(),FabricBlockSettings.copyOf(Blocks.TERRACOTTA)));
+            new StairBlock(HumbleBlocks.POLISHED_TERRACOTTA.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.TERRACOTTA)));
     public static final Block POLISHED_RED_TERRACOTTA_STAIRS = registerBlock("polished_red_terracotta_stairs",
-            new StairsBlock(HumbleBlocks.POLISHED_RED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copyOf(Blocks.RED_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.POLISHED_RED_TERRACOTTA.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.RED_TERRACOTTA)));
     public static final Block POLISHED_ORANGE_TERRACOTTA_STAIRS = registerBlock("polished_orange_terracotta_stairs",
-            new StairsBlock(HumbleBlocks.POLISHED_ORANGE_TERRACOTTA.getDefaultState(), FabricBlockSettings.copyOf(Blocks.ORANGE_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.POLISHED_ORANGE_TERRACOTTA.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.ORANGE_TERRACOTTA)));
     public static final Block POLISHED_YELLOW_TERRACOTTA_STAIRS = registerBlock("polished_yellow_terracotta_stairs",
-            new StairsBlock(HumbleBlocks.POLISHED_YELLOW_TERRACOTTA.getDefaultState(), FabricBlockSettings.copyOf(Blocks.YELLOW_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.POLISHED_YELLOW_TERRACOTTA.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.YELLOW_TERRACOTTA)));
     public static final Block POLISHED_LIME_TERRACOTTA_STAIRS = registerBlock("polished_lime_terracotta_stairs",
-            new StairsBlock(HumbleBlocks.POLISHED_LIME_TERRACOTTA.getDefaultState(), FabricBlockSettings.copyOf(Blocks.LIME_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.POLISHED_LIME_TERRACOTTA.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.LIME_TERRACOTTA)));
     public static final Block POLISHED_GREEN_TERRACOTTA_STAIRS = registerBlock("polished_green_terracotta_stairs",
-            new StairsBlock(HumbleBlocks.POLISHED_GREEN_TERRACOTTA.getDefaultState(), FabricBlockSettings.copyOf(Blocks.GREEN_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.POLISHED_GREEN_TERRACOTTA.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.GREEN_TERRACOTTA)));
     public static final Block POLISHED_BLUE_TERRACOTTA_STAIRS = registerBlock("polished_blue_terracotta_stairs",
-            new StairsBlock(HumbleBlocks.POLISHED_BLUE_TERRACOTTA.getDefaultState(), FabricBlockSettings.copyOf(Blocks.BLUE_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.POLISHED_BLUE_TERRACOTTA.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.BLUE_TERRACOTTA)));
     public static final Block POLISHED_CYAN_TERRACOTTA_STAIRS = registerBlock("polished_cyan_terracotta_stairs",
-            new StairsBlock(HumbleBlocks.POLISHED_CYAN_TERRACOTTA.getDefaultState(), FabricBlockSettings.copyOf(Blocks.CYAN_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.POLISHED_CYAN_TERRACOTTA.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.CYAN_TERRACOTTA)));
     public static final Block POLISHED_LIGHT_BLUE_TERRACOTTA_STAIRS = registerBlock("polished_light_blue_terracotta_stairs",
-            new StairsBlock(HumbleBlocks.POLISHED_LIGHT_BLUE_TERRACOTTA.getDefaultState(), FabricBlockSettings.copyOf(Blocks.LIGHT_BLUE_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.POLISHED_LIGHT_BLUE_TERRACOTTA.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.LIGHT_BLUE_TERRACOTTA)));
     public static final Block POLISHED_MAGENTA_TERRACOTTA_STAIRS = registerBlock("polished_magenta_terracotta_stairs",
-            new StairsBlock(HumbleBlocks.POLISHED_MAGENTA_TERRACOTTA.getDefaultState(), FabricBlockSettings.copyOf(Blocks.MAGENTA_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.POLISHED_MAGENTA_TERRACOTTA.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.MAGENTA_TERRACOTTA)));
     public static final Block POLISHED_PURPLE_TERRACOTTA_STAIRS = registerBlock("polished_purple_terracotta_stairs",
-            new StairsBlock(HumbleBlocks.POLISHED_PURPLE_TERRACOTTA.getDefaultState(), FabricBlockSettings.copyOf(Blocks.PURPLE_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.POLISHED_PURPLE_TERRACOTTA.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.PURPLE_TERRACOTTA)));
     public static final Block POLISHED_PINK_TERRACOTTA_STAIRS = registerBlock("polished_pink_terracotta_stairs",
-            new StairsBlock(HumbleBlocks.POLISHED_PINK_TERRACOTTA.getDefaultState(), FabricBlockSettings.copyOf(Blocks.PINK_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.POLISHED_PINK_TERRACOTTA.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.PINK_TERRACOTTA)));
     public static final Block POLISHED_BLACK_TERRACOTTA_STAIRS = registerBlock("polished_black_terracotta_stairs",
-            new StairsBlock(HumbleBlocks.POLISHED_BLACK_TERRACOTTA.getDefaultState(), FabricBlockSettings.copyOf(Blocks.BLACK_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.POLISHED_BLACK_TERRACOTTA.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.BLACK_TERRACOTTA)));
     public static final Block POLISHED_GRAY_TERRACOTTA_STAIRS = registerBlock("polished_gray_terracotta_stairs",
-            new StairsBlock(HumbleBlocks.POLISHED_GRAY_TERRACOTTA.getDefaultState(), FabricBlockSettings.copyOf(Blocks.GRAY_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.POLISHED_GRAY_TERRACOTTA.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.GRAY_TERRACOTTA)));
     public static final Block POLISHED_BROWN_TERRACOTTA_STAIRS = registerBlock("polished_brown_terracotta_stairs",
-            new StairsBlock(HumbleBlocks.POLISHED_BROWN_TERRACOTTA.getDefaultState(), FabricBlockSettings.copyOf(Blocks.BROWN_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.POLISHED_BROWN_TERRACOTTA.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.BROWN_TERRACOTTA)));
     public static final Block POLISHED_LIGHT_GRAY_TERRACOTTA_STAIRS = registerBlock("polished_light_gray_terracotta_stairs",
-            new StairsBlock(HumbleBlocks.POLISHED_LIGHT_GRAY_TERRACOTTA.getDefaultState(), FabricBlockSettings.copyOf(Blocks.LIGHT_GRAY_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.POLISHED_LIGHT_GRAY_TERRACOTTA.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.LIGHT_GRAY_TERRACOTTA)));
     public static final Block POLISHED_WHITE_TERRACOTTA_STAIRS = registerBlock("polished_white_terracotta_stairs",
-            new StairsBlock(HumbleBlocks.POLISHED_WHITE_TERRACOTTA.getDefaultState(), FabricBlockSettings.copyOf(Blocks.WHITE_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.POLISHED_WHITE_TERRACOTTA.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.WHITE_TERRACOTTA)));
 
     //Polished Terracotta Slab
     public static final Block POLISHED_TERRACOTTA_SLAB = registerBlock("polished_terracotta_slab",
@@ -315,39 +315,39 @@ public class HumbleBlocks {
 
     //Terracotta Tile Stairs
     public static final Block TERRACOTTA_TILES_STAIRS = registerBlock("terracotta_tiles_stairs",
-            new StairsBlock(HumbleBlocks.TERRACOTTA_TILES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.TERRACOTTA)));
+            new StairBlock(HumbleBlocks.TERRACOTTA_TILES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.TERRACOTTA)));
     public static final Block RED_TERRACOTTA_TILES_STAIRS = registerBlock("red_terracotta_tiles_stairs",
-            new StairsBlock(HumbleBlocks.RED_TERRACOTTA_TILES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.RED_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.RED_TERRACOTTA_TILES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.RED_TERRACOTTA)));
     public static final Block ORANGE_TERRACOTTA_TILES_STAIRS = registerBlock("orange_terracotta_tiles_stairs",
-            new StairsBlock(HumbleBlocks.ORANGE_TERRACOTTA_TILES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.ORANGE_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.ORANGE_TERRACOTTA_TILES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.ORANGE_TERRACOTTA)));
     public static final Block YELLOW_TERRACOTTA_TILES_STAIRS = registerBlock("yellow_terracotta_tiles_stairs",
-            new StairsBlock(HumbleBlocks.YELLOW_TERRACOTTA_TILES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.YELLOW_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.YELLOW_TERRACOTTA_TILES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.YELLOW_TERRACOTTA)));
     public static final Block LIME_TERRACOTTA_TILES_STAIRS = registerBlock("lime_terracotta_tiles_stairs",
-            new StairsBlock(HumbleBlocks.LIME_TERRACOTTA_TILES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.LIME_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.LIME_TERRACOTTA_TILES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.LIME_TERRACOTTA)));
     public static final Block GREEN_TERRACOTTA_TILES_STAIRS = registerBlock("green_terracotta_tiles_stairs",
-            new StairsBlock(HumbleBlocks.GREEN_TERRACOTTA_TILES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.GREEN_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.GREEN_TERRACOTTA_TILES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.GREEN_TERRACOTTA)));
     public static final Block BLUE_TERRACOTTA_TILES_STAIRS = registerBlock("blue_terracotta_tiles_stairs",
-            new StairsBlock(HumbleBlocks.BLUE_TERRACOTTA_TILES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.BLUE_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.BLUE_TERRACOTTA_TILES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.BLUE_TERRACOTTA)));
     public static final Block CYAN_TERRACOTTA_TILES_STAIRS = registerBlock("cyan_terracotta_tiles_stairs",
-            new StairsBlock(HumbleBlocks.CYAN_TERRACOTTA_TILES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.CYAN_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.CYAN_TERRACOTTA_TILES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.CYAN_TERRACOTTA)));
     public static final Block LIGHT_BLUE_TERRACOTTA_TILES_STAIRS = registerBlock("light_blue_terracotta_tiles_stairs",
-            new StairsBlock(HumbleBlocks.LIGHT_BLUE_TERRACOTTA_TILES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.LIGHT_BLUE_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.LIGHT_BLUE_TERRACOTTA_TILES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.LIGHT_BLUE_TERRACOTTA)));
     public static final Block MAGENTA_TERRACOTTA_TILES_STAIRS = registerBlock("magenta_terracotta_tiles_stairs",
-            new StairsBlock(HumbleBlocks.MAGENTA_TERRACOTTA_TILES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.MAGENTA_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.MAGENTA_TERRACOTTA_TILES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.MAGENTA_TERRACOTTA)));
     public static final Block PURPLE_TERRACOTTA_TILES_STAIRS = registerBlock("purple_terracotta_tiles_stairs",
-            new StairsBlock(HumbleBlocks.PURPLE_TERRACOTTA_TILES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.PURPLE_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.PURPLE_TERRACOTTA_TILES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.PURPLE_TERRACOTTA)));
     public static final Block PINK_TERRACOTTA_TILES_STAIRS = registerBlock("pink_terracotta_tiles_stairs",
-            new StairsBlock(HumbleBlocks.PINK_TERRACOTTA_TILES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.PINK_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.PINK_TERRACOTTA_TILES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.PINK_TERRACOTTA)));
     public static final Block BLACK_TERRACOTTA_TILES_STAIRS = registerBlock("black_terracotta_tiles_stairs",
-            new StairsBlock(HumbleBlocks.BLACK_TERRACOTTA_TILES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.BLACK_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.BLACK_TERRACOTTA_TILES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.BLACK_TERRACOTTA)));
     public static final Block GRAY_TERRACOTTA_TILES_STAIRS = registerBlock("gray_terracotta_tiles_stairs",
-            new StairsBlock(HumbleBlocks.GRAY_TERRACOTTA_TILES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.GRAY_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.GRAY_TERRACOTTA_TILES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.GRAY_TERRACOTTA)));
     public static final Block BROWN_TERRACOTTA_TILES_STAIRS = registerBlock("brown_terracotta_tiles_stairs",
-            new StairsBlock(HumbleBlocks.BROWN_TERRACOTTA_TILES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.BROWN_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.BROWN_TERRACOTTA_TILES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.BROWN_TERRACOTTA)));
     public static final Block LIGHT_GRAY_TERRACOTTA_TILES_STAIRS = registerBlock("light_gray_terracotta_tiles_stairs",
-            new StairsBlock(HumbleBlocks.LIGHT_GRAY_TERRACOTTA_TILES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.LIGHT_GRAY_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.LIGHT_GRAY_TERRACOTTA_TILES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.LIGHT_GRAY_TERRACOTTA)));
     public static final Block WHITE_TERRACOTTA_TILES_STAIRS = registerBlock("white_terracotta_tiles_stairs",
-            new StairsBlock(HumbleBlocks.WHITE_TERRACOTTA_TILES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.WHITE_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.WHITE_TERRACOTTA_TILES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.WHITE_TERRACOTTA)));
 
     //Terracotta Shingles
     public static final Block TERRACOTTA_SHINGLES = registerBlock("terracotta_shingles",
@@ -423,55 +423,58 @@ public class HumbleBlocks {
 
     //Terracotta Shingle Stairs
     public static final Block TERRACOTTA_SHINGLES_STAIRS = registerBlock("terracotta_shingles_stairs",
-            new StairsBlock(HumbleBlocks.TERRACOTTA_SHINGLES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.TERRACOTTA)));
+            new StairBlock(HumbleBlocks.TERRACOTTA_SHINGLES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.TERRACOTTA)));
     public static final Block RED_TERRACOTTA_SHINGLES_STAIRS = registerBlock("red_terracotta_shingles_stairs",
-            new StairsBlock(HumbleBlocks.RED_TERRACOTTA_SHINGLES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.RED_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.RED_TERRACOTTA_SHINGLES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.RED_TERRACOTTA)));
     public static final Block ORANGE_TERRACOTTA_SHINGLES_STAIRS = registerBlock("orange_terracotta_shingles_stairs",
-            new StairsBlock(HumbleBlocks.ORANGE_TERRACOTTA_SHINGLES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.ORANGE_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.ORANGE_TERRACOTTA_SHINGLES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.ORANGE_TERRACOTTA)));
     public static final Block YELLOW_TERRACOTTA_SHINGLES_STAIRS = registerBlock("yellow_terracotta_shingles_stairs",
-            new StairsBlock(HumbleBlocks.YELLOW_TERRACOTTA_SHINGLES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.YELLOW_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.YELLOW_TERRACOTTA_SHINGLES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.YELLOW_TERRACOTTA)));
     public static final Block LIME_TERRACOTTA_SHINGLES_STAIRS = registerBlock("lime_terracotta_shingles_stairs",
-            new StairsBlock(HumbleBlocks.LIME_TERRACOTTA_SHINGLES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.LIME_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.LIME_TERRACOTTA_SHINGLES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.LIME_TERRACOTTA)));
     public static final Block GREEN_TERRACOTTA_SHINGLES_STAIRS = registerBlock("green_terracotta_shingles_stairs",
-            new StairsBlock(HumbleBlocks.GREEN_TERRACOTTA_SHINGLES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.GREEN_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.GREEN_TERRACOTTA_SHINGLES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.GREEN_TERRACOTTA)));
     public static final Block BLUE_TERRACOTTA_SHINGLES_STAIRS = registerBlock("blue_terracotta_shingles_stairs",
-            new StairsBlock(HumbleBlocks.BLUE_TERRACOTTA_SHINGLES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.BLUE_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.BLUE_TERRACOTTA_SHINGLES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.BLUE_TERRACOTTA)));
     public static final Block CYAN_TERRACOTTA_SHINGLES_STAIRS = registerBlock("cyan_terracotta_shingles_stairs",
-            new StairsBlock(HumbleBlocks.CYAN_TERRACOTTA_SHINGLES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.CYAN_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.CYAN_TERRACOTTA_SHINGLES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.CYAN_TERRACOTTA)));
     public static final Block LIGHT_BLUE_TERRACOTTA_SHINGLES_STAIRS = registerBlock("light_blue_terracotta_shingles_stairs",
-            new StairsBlock(HumbleBlocks.LIGHT_BLUE_TERRACOTTA_SHINGLES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.LIGHT_BLUE_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.LIGHT_BLUE_TERRACOTTA_SHINGLES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.LIGHT_BLUE_TERRACOTTA)));
     public static final Block MAGENTA_TERRACOTTA_SHINGLES_STAIRS = registerBlock("magenta_terracotta_shingles_stairs",
-            new StairsBlock(HumbleBlocks.MAGENTA_TERRACOTTA_SHINGLES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.MAGENTA_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.MAGENTA_TERRACOTTA_SHINGLES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.MAGENTA_TERRACOTTA)));
     public static final Block PURPLE_TERRACOTTA_SHINGLES_STAIRS = registerBlock("purple_terracotta_shingles_stairs",
-            new StairsBlock(HumbleBlocks.PURPLE_TERRACOTTA_SHINGLES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.PURPLE_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.PURPLE_TERRACOTTA_SHINGLES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.PURPLE_TERRACOTTA)));
     public static final Block PINK_TERRACOTTA_SHINGLES_STAIRS = registerBlock("pink_terracotta_shingles_stairs",
-            new StairsBlock(HumbleBlocks.PINK_TERRACOTTA_SHINGLES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.PINK_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.PINK_TERRACOTTA_SHINGLES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.PINK_TERRACOTTA)));
     public static final Block BLACK_TERRACOTTA_SHINGLES_STAIRS = registerBlock("black_terracotta_shingles_stairs",
-            new StairsBlock(HumbleBlocks.BLACK_TERRACOTTA_SHINGLES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.BLACK_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.BLACK_TERRACOTTA_SHINGLES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.BLACK_TERRACOTTA)));
     public static final Block GRAY_TERRACOTTA_SHINGLES_STAIRS = registerBlock("gray_terracotta_shingles_stairs",
-            new StairsBlock(HumbleBlocks.GRAY_TERRACOTTA_SHINGLES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.GRAY_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.GRAY_TERRACOTTA_SHINGLES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.GRAY_TERRACOTTA)));
     public static final Block BROWN_TERRACOTTA_SHINGLES_STAIRS = registerBlock("brown_terracotta_shingles_stairs",
-            new StairsBlock(HumbleBlocks.BROWN_TERRACOTTA_SHINGLES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.BROWN_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.BROWN_TERRACOTTA_SHINGLES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.BROWN_TERRACOTTA)));
     public static final Block LIGHT_GRAY_TERRACOTTA_SHINGLES_STAIRS = registerBlock("light_gray_terracotta_shingles_stairs",
-            new StairsBlock(HumbleBlocks.LIGHT_GRAY_TERRACOTTA_SHINGLES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.LIGHT_GRAY_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.LIGHT_GRAY_TERRACOTTA_SHINGLES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.LIGHT_GRAY_TERRACOTTA)));
     public static final Block WHITE_TERRACOTTA_SHINGLES_STAIRS = registerBlock("white_terracotta_shingles_stairs",
-            new StairsBlock(HumbleBlocks.WHITE_TERRACOTTA_SHINGLES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.WHITE_TERRACOTTA)));
+            new StairBlock(HumbleBlocks.WHITE_TERRACOTTA_SHINGLES.defaultBlockState(), FabricBlockSettings.copyOf(Blocks.WHITE_TERRACOTTA)));
 
 
     // End Registry
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, new Identifier(Humble.MOD_ID, name), block);
+        return Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(Humble.MOD_ID, name), block);
     }
+
     private static Block registerBlockNoItem(String name, Block block) {
-        return Registry.register(Registries.BLOCK, new Identifier(Humble.MOD_ID, name), block);
+        return Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(Humble.MOD_ID, name), block);
     }
+
     private static Item registerBlockItem(String name, Block block) {
-        return Registry.register(Registries.ITEM, new Identifier(Humble.MOD_ID, name),
+        return Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Humble.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings()));
     }
+
     public static void registerHumbleBlocks() {
-        Humble.LOGGER.info("Registering Blocks for " +Humble.MOD_ID);
+        Humble.LOGGER.info("Registering Blocks for " + Humble.MOD_ID);
     }
 }
