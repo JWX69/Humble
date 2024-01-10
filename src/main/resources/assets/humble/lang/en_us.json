@@ -1,7 +1,10 @@
 {
   "item.humble.rock": "Rock",
   "block.humble.cobbled_path": "Cobbled Path",
-  
+
+  "block.humble.terracotta_pot": "Terracotta Pot",
+  "block.humble.pottery_table": "Pottery Table",
+
   "block.humble.terracotta_bricks": "Terracotta Bricks",
   "block.humble.red_terracotta_bricks": "Red Terracotta Bricks",
   "block.humble.orange_terracotta_bricks": "Orange Terracotta Bricks",

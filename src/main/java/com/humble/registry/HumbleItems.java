@@ -20,7 +20,13 @@ public class HumbleItems {
     private static void addToNaturalGroup(FabricItemGroupEntries entries) {
         entries.add(HumbleBlocks.COBBLED_PATH);
     }
+    private static void addToFuncGroup(FabricItemGroupEntries entries) {
+        entries.add(HumbleBlocks.POTTERY_TABLE);
+    }
     private static void addToColorGroup(FabricItemGroupEntries entries) {
+
+        entries.add(HumbleBlocks.TERRACOTTA_POT);
+
         //Terracotta Bricks
         entries.add(HumbleBlocks.TERRACOTTA_BRICKS);
         entries.add(HumbleBlocks.RED_TERRACOTTA_BRICKS);
@@ -248,5 +254,6 @@ public class HumbleItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(HumbleItems::addToIngredientGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(HumbleItems::addToNaturalGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register(HumbleItems::addToColorGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(HumbleItems::addToFuncGroup);
     }
 }

@@ -1,6 +1,8 @@
 package com.humble.registry;
 
 import com.humble.Humble;
+import com.humble.block.PotBlock;
+import com.humble.block.PotteryTableBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -16,6 +18,10 @@ public class HumbleBlocks {
 
     public static final Block COBBLED_PATH = registerBlock("cobbled_path",
             new DirtPathBlock(FabricBlockSettings.copyOf(Blocks.DIRT_PATH)));
+    public static final Block POTTERY_TABLE = registerBlock("pottery_table",
+            new PotteryTableBlock(FabricBlockSettings.copyOf(Blocks.TERRACOTTA).nonOpaque()));
+    public static final Block TERRACOTTA_POT = registerBlock("terracotta_pot",
+            new PotBlock(FabricBlockSettings.copyOf(Blocks.TERRACOTTA).nonOpaque()));
 
     // Terracotta Bricks
 
