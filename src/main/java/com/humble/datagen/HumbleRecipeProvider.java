@@ -19,6 +19,7 @@ public class HumbleRecipeProvider extends FabricRecipeProvider {
     public void buildRecipes(Consumer<FinishedRecipe> exporter) {
         nineBlockStorageRecipes(exporter, RecipeCategory.MISC, HumbleItems.ROCK, RecipeCategory.MISC,
                 Blocks.COBBLESTONE);
+
     //Terracotta Bricks ect.
 // Bricks
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HumbleBlocks.TERRACOTTA_BRICKS, Blocks.TERRACOTTA);
@@ -77,7 +78,6 @@ public class HumbleRecipeProvider extends FabricRecipeProvider {
 
     //Polished Terracotta ect.
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HumbleBlocks.POLISHED_TERRACOTTA, Blocks.TERRACOTTA);
-// Polished
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HumbleBlocks.POLISHED_RED_TERRACOTTA, Blocks.RED_TERRACOTTA);
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HumbleBlocks.POLISHED_ORANGE_TERRACOTTA, Blocks.ORANGE_TERRACOTTA);
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HumbleBlocks.POLISHED_YELLOW_TERRACOTTA, Blocks.YELLOW_TERRACOTTA);
@@ -95,6 +95,7 @@ public class HumbleRecipeProvider extends FabricRecipeProvider {
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HumbleBlocks.POLISHED_LIGHT_GRAY_TERRACOTTA, Blocks.LIGHT_GRAY_TERRACOTTA);
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HumbleBlocks.POLISHED_WHITE_TERRACOTTA, Blocks.WHITE_TERRACOTTA);
 // Polished Slabs
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HumbleBlocks.POLISHED_TERRACOTTA_SLAB, Blocks.TERRACOTTA, 2);
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HumbleBlocks.POLISHED_RED_TERRACOTTA_SLAB, Blocks.RED_TERRACOTTA, 2);
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HumbleBlocks.POLISHED_ORANGE_TERRACOTTA_SLAB, Blocks.ORANGE_TERRACOTTA, 2);
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HumbleBlocks.POLISHED_YELLOW_TERRACOTTA_SLAB, Blocks.YELLOW_TERRACOTTA, 2);
@@ -112,6 +113,7 @@ public class HumbleRecipeProvider extends FabricRecipeProvider {
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HumbleBlocks.POLISHED_LIGHT_GRAY_TERRACOTTA_SLAB, Blocks.LIGHT_GRAY_TERRACOTTA, 2);
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HumbleBlocks.POLISHED_WHITE_TERRACOTTA_SLAB, Blocks.WHITE_TERRACOTTA, 2);
 // Polished Stairs
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HumbleBlocks.POLISHED_TERRACOTTA_STAIRS, Blocks.TERRACOTTA);
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HumbleBlocks.POLISHED_RED_TERRACOTTA_STAIRS, Blocks.RED_TERRACOTTA);
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HumbleBlocks.POLISHED_ORANGE_TERRACOTTA_STAIRS, Blocks.ORANGE_TERRACOTTA);
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HumbleBlocks.POLISHED_YELLOW_TERRACOTTA_STAIRS, Blocks.YELLOW_TERRACOTTA);
@@ -240,6 +242,83 @@ public class HumbleRecipeProvider extends FabricRecipeProvider {
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HumbleBlocks.BROWN_TERRACOTTA_SHINGLES_STAIRS, Blocks.BROWN_TERRACOTTA);
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HumbleBlocks.LIGHT_GRAY_TERRACOTTA_SHINGLES_STAIRS, Blocks.LIGHT_GRAY_TERRACOTTA);
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HumbleBlocks.WHITE_TERRACOTTA_SHINGLES_STAIRS, Blocks.WHITE_TERRACOTTA);
+
+
+        //Bricks
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.TERRACOTTA, HumbleBlocks.TERRACOTTA_BRICKS);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.RED_TERRACOTTA, HumbleBlocks.RED_TERRACOTTA_BRICKS);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.ORANGE_TERRACOTTA, HumbleBlocks.ORANGE_TERRACOTTA_BRICKS);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.YELLOW_TERRACOTTA, HumbleBlocks.YELLOW_TERRACOTTA_BRICKS);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.LIME_TERRACOTTA, HumbleBlocks.LIME_TERRACOTTA_BRICKS);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.GREEN_TERRACOTTA, HumbleBlocks.GREEN_TERRACOTTA_BRICKS);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.BLUE_TERRACOTTA, HumbleBlocks.BLUE_TERRACOTTA_BRICKS);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.CYAN_TERRACOTTA, HumbleBlocks.CYAN_TERRACOTTA_BRICKS);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.LIGHT_BLUE_TERRACOTTA, HumbleBlocks.LIGHT_BLUE_TERRACOTTA_BRICKS);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.MAGENTA_TERRACOTTA, HumbleBlocks.MAGENTA_TERRACOTTA_BRICKS);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.PURPLE_TERRACOTTA, HumbleBlocks.PURPLE_TERRACOTTA_BRICKS);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.PINK_TERRACOTTA, HumbleBlocks.PINK_TERRACOTTA_BRICKS);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.BLACK_TERRACOTTA, HumbleBlocks.BLACK_TERRACOTTA_BRICKS);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.GRAY_TERRACOTTA, HumbleBlocks.GRAY_TERRACOTTA_BRICKS);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.BROWN_TERRACOTTA, HumbleBlocks.BROWN_TERRACOTTA_BRICKS);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.LIGHT_GRAY_TERRACOTTA, HumbleBlocks.LIGHT_GRAY_TERRACOTTA_BRICKS);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.WHITE_TERRACOTTA, HumbleBlocks.WHITE_TERRACOTTA_BRICKS);
+
+        // Polished
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.TERRACOTTA, HumbleBlocks.POLISHED_TERRACOTTA);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.RED_TERRACOTTA, HumbleBlocks.POLISHED_RED_TERRACOTTA);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.ORANGE_TERRACOTTA, HumbleBlocks.POLISHED_ORANGE_TERRACOTTA);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.YELLOW_TERRACOTTA, HumbleBlocks.POLISHED_YELLOW_TERRACOTTA);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.LIME_TERRACOTTA, HumbleBlocks.POLISHED_LIME_TERRACOTTA);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.GREEN_TERRACOTTA, HumbleBlocks.POLISHED_GREEN_TERRACOTTA);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.BLUE_TERRACOTTA, HumbleBlocks.POLISHED_BLUE_TERRACOTTA);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.CYAN_TERRACOTTA, HumbleBlocks.POLISHED_CYAN_TERRACOTTA);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.LIGHT_BLUE_TERRACOTTA, HumbleBlocks.POLISHED_LIGHT_BLUE_TERRACOTTA);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.MAGENTA_TERRACOTTA, HumbleBlocks.POLISHED_MAGENTA_TERRACOTTA);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.PURPLE_TERRACOTTA, HumbleBlocks.POLISHED_PURPLE_TERRACOTTA);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.PINK_TERRACOTTA, HumbleBlocks.POLISHED_PINK_TERRACOTTA);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.BLACK_TERRACOTTA, HumbleBlocks.POLISHED_BLACK_TERRACOTTA);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.GRAY_TERRACOTTA, HumbleBlocks.POLISHED_GRAY_TERRACOTTA);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.BROWN_TERRACOTTA, HumbleBlocks.POLISHED_BROWN_TERRACOTTA);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.LIGHT_GRAY_TERRACOTTA, HumbleBlocks.POLISHED_LIGHT_GRAY_TERRACOTTA);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.WHITE_TERRACOTTA, HumbleBlocks.POLISHED_WHITE_TERRACOTTA);
+
+        // Tiles
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.TERRACOTTA, HumbleBlocks.TERRACOTTA_TILES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.RED_TERRACOTTA, HumbleBlocks.RED_TERRACOTTA_TILES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.ORANGE_TERRACOTTA, HumbleBlocks.ORANGE_TERRACOTTA_TILES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.YELLOW_TERRACOTTA, HumbleBlocks.YELLOW_TERRACOTTA_TILES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.LIME_TERRACOTTA, HumbleBlocks.LIME_TERRACOTTA_TILES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.GREEN_TERRACOTTA, HumbleBlocks.GREEN_TERRACOTTA_TILES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.BLUE_TERRACOTTA, HumbleBlocks.BLUE_TERRACOTTA_TILES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.CYAN_TERRACOTTA, HumbleBlocks.CYAN_TERRACOTTA_TILES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.LIGHT_BLUE_TERRACOTTA, HumbleBlocks.LIGHT_BLUE_TERRACOTTA_TILES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.MAGENTA_TERRACOTTA, HumbleBlocks.MAGENTA_TERRACOTTA_TILES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.PURPLE_TERRACOTTA, HumbleBlocks.PURPLE_TERRACOTTA_TILES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.PINK_TERRACOTTA, HumbleBlocks.PINK_TERRACOTTA_TILES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.BLACK_TERRACOTTA, HumbleBlocks.BLACK_TERRACOTTA_TILES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.GRAY_TERRACOTTA, HumbleBlocks.GRAY_TERRACOTTA_TILES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.BROWN_TERRACOTTA, HumbleBlocks.BROWN_TERRACOTTA_TILES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.LIGHT_GRAY_TERRACOTTA, HumbleBlocks.LIGHT_GRAY_TERRACOTTA_TILES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.WHITE_TERRACOTTA, HumbleBlocks.WHITE_TERRACOTTA_TILES);
+
+        // Shingles
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.TERRACOTTA, HumbleBlocks.TERRACOTTA_SHINGLES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.RED_TERRACOTTA, HumbleBlocks.RED_TERRACOTTA_SHINGLES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.ORANGE_TERRACOTTA, HumbleBlocks.ORANGE_TERRACOTTA_SHINGLES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.YELLOW_TERRACOTTA, HumbleBlocks.YELLOW_TERRACOTTA_SHINGLES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.LIME_TERRACOTTA, HumbleBlocks.LIME_TERRACOTTA_SHINGLES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.GREEN_TERRACOTTA, HumbleBlocks.GREEN_TERRACOTTA_SHINGLES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.BLUE_TERRACOTTA, HumbleBlocks.BLUE_TERRACOTTA_SHINGLES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.CYAN_TERRACOTTA, HumbleBlocks.CYAN_TERRACOTTA_SHINGLES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.LIGHT_BLUE_TERRACOTTA, HumbleBlocks.LIGHT_BLUE_TERRACOTTA_SHINGLES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.MAGENTA_TERRACOTTA, HumbleBlocks.MAGENTA_TERRACOTTA_SHINGLES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.PURPLE_TERRACOTTA, HumbleBlocks.PURPLE_TERRACOTTA_SHINGLES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.PINK_TERRACOTTA, HumbleBlocks.PINK_TERRACOTTA_SHINGLES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.BLACK_TERRACOTTA, HumbleBlocks.BLACK_TERRACOTTA_SHINGLES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.GRAY_TERRACOTTA, HumbleBlocks.GRAY_TERRACOTTA_SHINGLES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.BROWN_TERRACOTTA, HumbleBlocks.BROWN_TERRACOTTA_SHINGLES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.LIGHT_GRAY_TERRACOTTA, HumbleBlocks.LIGHT_GRAY_TERRACOTTA_SHINGLES);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.WHITE_TERRACOTTA, HumbleBlocks.WHITE_TERRACOTTA_SHINGLES);
 
     }
 }

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "humble:white_terracotta_tiles"
+  },
+  "result": "minecraft:white_terracotta"
+}

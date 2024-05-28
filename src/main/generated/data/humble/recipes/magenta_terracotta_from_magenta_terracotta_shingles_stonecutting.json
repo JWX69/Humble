@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "humble:magenta_terracotta_shingles"
+  },
+  "result": "minecraft:magenta_terracotta"
+}

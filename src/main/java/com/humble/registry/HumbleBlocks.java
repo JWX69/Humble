@@ -9,8 +9,15 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.PushReaction;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class HumbleBlocks {
 
@@ -20,11 +27,68 @@ public class HumbleBlocks {
             new DirtPathBlock(FabricBlockSettings.copyOf(Blocks.DIRT_PATH)));
     public static final Block POTTERY_TABLE = registerBlock("pottery_table",
             new PotteryTableBlock(FabricBlockSettings.copyOf(Blocks.TERRACOTTA).noOcclusion()));
+
+    // Pots
     public static final Block TERRACOTTA_POT = registerBlock("terracotta_pot",
             new PotBlock(FabricBlockSettings.copyOf(Blocks.TERRACOTTA).noOcclusion()));
+    public static final Block RED_TERRACOTTA_POT = registerBlock("red_terracotta_pot",
+            new PotBlock(FabricBlockSettings.copyOf(Blocks.RED_TERRACOTTA).noOcclusion()));
+    public static final Block ORANGE_TERRACOTTA_POT = registerBlock("orange_terracotta_pot",
+            new PotBlock(FabricBlockSettings.copyOf(Blocks.ORANGE_TERRACOTTA).noOcclusion()));
+    public static final Block YELLOW_TERRACOTTA_POT = registerBlock("yellow_terracotta_pot",
+            new PotBlock(FabricBlockSettings.copyOf(Blocks.YELLOW_TERRACOTTA).noOcclusion()));
+    public static final Block LIME_TERRACOTTA_POT = registerBlock("lime_terracotta_pot",
+            new PotBlock(FabricBlockSettings.copyOf(Blocks.LIME_TERRACOTTA).noOcclusion()));
+
+    public static final Block GREEN_TERRACOTTA_POT = registerBlock("green_terracotta_pot",
+            new PotBlock(FabricBlockSettings.copyOf(Blocks.GREEN_TERRACOTTA).noOcclusion()));
+
+    public static final Block BLUE_TERRACOTTA_POT = registerBlock("blue_terracotta_pot",
+            new PotBlock(FabricBlockSettings.copyOf(Blocks.BLUE_TERRACOTTA).noOcclusion()));
+
+    public static final Block CYAN_TERRACOTTA_POT = registerBlock("cyan_terracotta_pot",
+            new PotBlock(FabricBlockSettings.copyOf(Blocks.CYAN_TERRACOTTA).noOcclusion()));
+
+    public static final Block LIGHT_BLUE_TERRACOTTA_POT = registerBlock("light_blue_terracotta_pot",
+            new PotBlock(FabricBlockSettings.copyOf(Blocks.LIGHT_BLUE_TERRACOTTA).noOcclusion()));
+
+    public static final Block MAGENTA_TERRACOTTA_POT = registerBlock("magenta_terracotta_pot",
+            new PotBlock(FabricBlockSettings.copyOf(Blocks.MAGENTA_TERRACOTTA).noOcclusion()));
+
+    public static final Block PURPLE_TERRACOTTA_POT = registerBlock("purple_terracotta_pot",
+            new PotBlock(FabricBlockSettings.copyOf(Blocks.PURPLE_TERRACOTTA).noOcclusion()));
+
+    public static final Block PINK_TERRACOTTA_POT = registerBlock("pink_terracotta_pot",
+            new PotBlock(FabricBlockSettings.copyOf(Blocks.PINK_TERRACOTTA).noOcclusion()));
+
+    public static final Block BLACK_TERRACOTTA_POT = registerBlock("black_terracotta_pot",
+            new PotBlock(FabricBlockSettings.copyOf(Blocks.BLACK_TERRACOTTA).noOcclusion()));
+
+    public static final Block GRAY_TERRACOTTA_POT = registerBlock("gray_terracotta_pot",
+            new PotBlock(FabricBlockSettings.copyOf(Blocks.GRAY_TERRACOTTA).noOcclusion()));
+
+    public static final Block BROWN_TERRACOTTA_POT = registerBlock("brown_terracotta_pot",
+            new PotBlock(FabricBlockSettings.copyOf(Blocks.BROWN_TERRACOTTA).noOcclusion()));
+
+    public static final Block LIGHT_GRAY_TERRACOTTA_POT = registerBlock("light_gray_terracotta_pot",
+            new PotBlock(FabricBlockSettings.copyOf(Blocks.LIGHT_GRAY_TERRACOTTA).noOcclusion()));
+
+    public static final Block WHITE_TERRACOTTA_POT = registerBlock("white_terracotta_pot",
+            new PotBlock(FabricBlockSettings.copyOf(Blocks.WHITE_TERRACOTTA).noOcclusion()));
 
     // Terracotta Bricks
 
+    /*
+    public static Map<String, Block> TERRACOTTA_BRICKS = new HashMap<>();
+    static {
+        for(DyeColor color : DyeColor.values()) {
+            String colorName = color.name() + "_terracotta_bricks";
+            Block block = registerBlock(colorName, new
+                    Block(BlockBehaviour.Properties.of().mapColor(color.getMapColor()).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.4F).pushReaction(PushReaction.PUSH_ONLY)));
+            TERRACOTTA_BRICKS.put(colorName, block);
+        }
+    }
+    */
     public static final Block TERRACOTTA_BRICKS = registerBlock("terracotta_bricks",
             new Block(FabricBlockSettings.copyOf(Blocks.TERRACOTTA)));
     public static final Block RED_TERRACOTTA_BRICKS = registerBlock("red_terracotta_bricks",

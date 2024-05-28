@@ -15,8 +15,12 @@ import org.jetbrains.annotations.Nullable;
 
 public class PotteryTableBlock extends BaseEntityBlock implements EntityBlock {
     private static final VoxelShape TOP = Block.box(0,11,0,16,16,16);
-    private static final VoxelShape LEGS = Block.box(1,0,1,15,11,15);
-    private static final VoxelShape SHAPE = Shapes.or(TOP, LEGS);
+    private static final VoxelShape LEG1 = Block.box(1, 0, 1, 5, 11, 5);
+    private static final VoxelShape LEG2 = Block.box(11, 0, 1, 15, 11, 5);
+    private static final VoxelShape LEG3 = Block.box(11, 0, 11, 15, 11, 15);
+    private static final VoxelShape LEG4 = Block.box(1, 0, 11, 5, 11, 15);
+    private static final VoxelShape SHAPE = Shapes.or(TOP, LEG1, LEG2, LEG3, LEG4);
+
     public PotteryTableBlock(Properties settings) {
         super(settings);
     }

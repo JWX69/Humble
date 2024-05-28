@@ -7,6 +7,11 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.models.BlockModelGenerators;
 import net.minecraft.data.models.ItemModelGenerators;
 import net.minecraft.data.models.model.ModelTemplates;
+import net.minecraft.world.level.block.Block;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 public class HumbleModelProvider extends FabricModelProvider {
     public HumbleModelProvider(FabricDataOutput output) {
@@ -14,6 +19,12 @@ public class HumbleModelProvider extends FabricModelProvider {
     }
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockStateModelGenerator) {
+        /*
+        List<BlockModelGenerators.BlockFamilyProvider> blockFamilyProviders = new ArrayList<>();
+        for (Map.Entry<String, Block> entry : HumbleBlocks.TERRACOTTA_BRICKS.entrySet()) {
+            blockFamilyProviders.add(blockStateModelGenerator.family(entry.getValue()));
+        }
+        */
         //Terracotta Bricks
         BlockModelGenerators.BlockFamilyProvider terracottaBricks = blockStateModelGenerator.family(HumbleBlocks.TERRACOTTA_BRICKS);
         BlockModelGenerators.BlockFamilyProvider redTerracottaBricks = blockStateModelGenerator.family(HumbleBlocks.RED_TERRACOTTA_BRICKS);

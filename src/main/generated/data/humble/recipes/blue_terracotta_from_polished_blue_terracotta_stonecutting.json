@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "humble:polished_blue_terracotta"
+  },
+  "result": "minecraft:blue_terracotta"
+}

@@ -16,8 +16,8 @@ import org.jetbrains.annotations.Nullable;
 
 public class PotBlock extends BaseEntityBlock implements EntityBlock {
     private static final VoxelShape POT = Block.box(1, 0, 1, 15, 12, 15);
-    private static final VoxelShape COLLAR = Block.box(3, 12, 3, 13, 13, 13);
-    private static final VoxelShape LIP = Block.box(2, 13, 2, 14, 15, 14);
+    private static final VoxelShape COLLAR = Block.box(3, 12, 3, 13, 14, 13);
+    private static final VoxelShape LIP = Block.box(2, 13, 2, 14, 16, 14);
     private static final VoxelShape SHAPE = Shapes.or(POT, COLLAR, LIP);
 
     public PotBlock(Properties settings) {

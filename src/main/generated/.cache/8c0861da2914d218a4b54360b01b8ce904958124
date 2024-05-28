@@ -1,2 +1,5 @@
-// 1.20.1	2024-01-06T13:02:37.2062471	Humble/Tags for minecraft:block
+// 1.20.1	2024-01-22T15:24:31.8668519	Humble/Tags for minecraft:block
+0683b01c51b7ea7189d3aaafb5a57a9987dcaef6 data\minecraft\tags\blocks\terracotta.json
+0683b01c51b7ea7189d3aaafb5a57a9987dcaef6 data\minecraft\tags\blocks\mineable\pickaxe.json
+4eb3324eceffc462ae11558677820e0902405e70 data\minecraft\tags\blocks\stairs.json
 e7de12b1cac0d6b50e2b8fe7e1497033b6351ef7 data\minecraft\tags\blocks\mineable\shovel.json

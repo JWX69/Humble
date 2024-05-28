@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "humble:block/red_terracotta_pot"
+      }
+    ]
+  }
+}
